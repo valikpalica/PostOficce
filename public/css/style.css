@@ -1,0 +1,18 @@
+.center{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 250px;
+    background-color: gray;
+    margin: -100px 0 0 -200px;
+}
+.button_center{
+    text-align: center;
+}
+a{
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}

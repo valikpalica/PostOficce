@@ -1,0 +1,25 @@
+{
+  "name": "postoffice",
+  "version": "1.0.0",
+  "description": "it`s my first work!!!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "div": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valikpalica/PostOficce.git"
+  },
+  "author": "noname",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valikpalica/PostOficce/issues"
+  },
+  "homepage": "https://github.com/valikpalica/PostOficce#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "hbs": "^4.1.1"
+  }
+}
