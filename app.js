@@ -1,8 +1,10 @@
 const express = require('express');
 const exHbs = require('express-handlebars');
 const hbs = require('hbs');
+const bodyparser = require('body-parser');
 const routs = require('./routs/main_rout');
 const  app = express();
+app.use(bodyparser.urlencoded({ extended: false }));
 let PORT = 8080 || process.env.PORT;
 app.listen(PORT,()=>{
    console.log(`server has been started on port ${PORT}`);
