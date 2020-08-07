@@ -11,10 +11,11 @@
     text-align: center;
 }
 a{
-    color: #0097A7;
+    color: #FFFFFF;
 }
 a:hover{
     text-decoration: none;
+    color: #FFFFFF;
 }
 .signupdiv{
     position: fixed;
