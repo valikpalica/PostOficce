@@ -9,8 +9,8 @@ router.get('/',(req,res)=>{
     res.status(200).render('main.hbs');
 });
 router.post('/validation',(req,res)=>{
-    //console.log(req.body,hash());
-
+    console.log(req.body['mail']);
+    sendemail(req.body['mail']);
     res.status(200).render('main.hbs');
 });
 module.exports = router;
