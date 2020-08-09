@@ -12,14 +12,21 @@ const transporter = mailer.createTransport({
         }
     }
 );
+
+function sendOption(mail,key){
+    mailOption.to = mail;
+    mailOption.text = key;
+}
 let mailOption = {
     from:'palitsavalentin@gmail.com',
-    to:'programmtestandwork@gmail.com',
+    to:'',
     subject:'Ключ авторизації',
-    text:'2345'
+    text:''
 };
 
-function sendemail(mail){
+async function sendemail(mail){
+    global.keymail = await hash();
+    sendOption(mail,global.keymail);
     transporter.sendMail(mailOption,(err,data)=>{
         if(err){
             console.log(err, 'err');

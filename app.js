@@ -4,8 +4,7 @@ const hbs = require('hbs');
 const bodyparser = require('body-parser');
 const routs = require('./routs/main_rout');
 const  app = express();
-app.use(bodyparser.urlencoded({ extended: true }));
-app.use(bodyparser.json({ extended: true }));
+/*app.use(bodyparser.json({ extended: true }));*/
 let PORT = 8080 || process.env.PORT;
 app.listen(PORT,()=>{
    console.log(`server has been started on port ${PORT}`);

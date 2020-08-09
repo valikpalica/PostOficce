@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82023c7e-79a6-4b06-90dd-4e3dea8418e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/views/conkey.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/sendkey.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/sendkey.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/alert.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routs/main_rout.js" beforeDir="false" afterPath="$PROJECT_DIR$/routs/main_rout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/main.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/signup.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/signup.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +29,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fj5de3peJY4BGsKWbjqrOQhbLY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -47,7 +55,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596718749317</updated>
-      <workItem from="1596718750816" duration="30765000" />
+      <workItem from="1596718750816" duration="32116000" />
+      <workItem from="1596970195526" duration="6825000" />
+      <workItem from="1597000572051" duration="1481000" />
     </task>
     <servers />
   </component>
@@ -55,22 +65,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1513" height="210" key="GridCell.Tab.0.bottom" timestamp="1596870576597">
+    <state width="1513" height="210" key="GridCell.Tab.0.bottom" timestamp="1596897298135">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1513" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596870576597" />
-    <state width="1513" height="210" key="GridCell.Tab.0.center" timestamp="1596870576597">
+    <state width="1513" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596897298135" />
+    <state width="1513" height="210" key="GridCell.Tab.0.center" timestamp="1596897298135">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1513" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596870576597" />
-    <state width="1513" height="210" key="GridCell.Tab.0.left" timestamp="1596870576596">
+    <state width="1513" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596897298135" />
+    <state width="1513" height="210" key="GridCell.Tab.0.left" timestamp="1596897298134">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1513" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596870576596" />
-    <state width="1513" height="210" key="GridCell.Tab.0.right" timestamp="1596870576597">
+    <state width="1513" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596897298134" />
+    <state width="1513" height="210" key="GridCell.Tab.0.right" timestamp="1596897298135">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1513" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596870576597" />
+    <state width="1513" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596897298135" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596810018348">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

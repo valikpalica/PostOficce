@@ -11,9 +11,11 @@ async function message()  {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
             },
-            body:JSON.stringify({mail:mail})
+            body:JSON.stringify({mail:mail}),
+
         });
     }
+
     else {
         let div = document.getElementById('err');
         div.style  = 'text-align: center;margin-bottom: 10px;margin-right:auto; margin-left: auto; width: 250px; color: #D32F2F; border: solid 1px #D32F2F';
