@@ -24,7 +24,7 @@ router.post('/confirm',urlencodeParse,(req,res)=>{
     }  = req.body;
     if (global.keymail === req.body['key']){
         res.status(200).render('signup.hbs');
-        saveUser(email,key);
+        //saveUser(email,key);
     };
 });
 module.exports = router;

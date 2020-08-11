@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const GetModel = mongoose.Schema;
-const User = new GetModel({
+const Shema = mongoose.Schema;
+const User = new Shema({
    email:String,
    key:String,
    status:String
