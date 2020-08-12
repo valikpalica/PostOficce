@@ -3,15 +3,15 @@ let {sendemail} = require('../API/sendkey');
 const parser = require('body-parser');
 const urlencodeParse = parser.urlencoded({extended:true});
 const jsonParser = parser.json({extended: true});
-const {saveUser} = require('../API/db');
-let app = express();
+const {saveUser,getAll,test} = require('../API/db');
 const router = express.Router();
 
 router.get('/',(req,res)=>{
     res.status(200).render('main.hbs');
 });
 router.post('/validation',jsonParser,(req,res)=>{
-    sendemail(req.body['mail']);
+    console.log('server');
+    //sendemail(req.body['mail']);
 });
 router.post('/key',urlencodeParse,(req,res)=>{
     console.log(req.body);
@@ -23,8 +23,12 @@ router.post('/confirm',urlencodeParse,(req,res)=>{
         key
     }  = req.body;
     if (global.keymail === req.body['key']){
-        res.status(200).render('signup.hbs');
-        //saveUser(email,key);
+        res.status(200).render('main.hbs');
+        saveUser(email,key);
     };
 });
+router.get('/admin',async (req,res)=>{
+    res.status(200).render('createsubscribe.hbs');
+});
+
 module.exports = router;

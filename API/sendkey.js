@@ -27,14 +27,15 @@ let mailOption = {
 async function sendemail(mail){
     global.keymail = await hash();
     sendOption(mail,global.keymail);
-    transporter.sendMail(mailOption,(err,data)=>{
-        if(err){
-            console.log(err, 'err');
-        }
-        else{
-            console.log('Email send');
-        }
-    });
-}
 
+
+transporter.sendMail(mailOption,(err,data)=>{
+    if(err){
+        console.log(err, 'err');
+    }
+    else{
+        console.log('Email send');
+    }
+});
+}
 module.exports = {sendemail};
