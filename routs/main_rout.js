@@ -3,7 +3,7 @@ let {sendemail} = require('../API/sendkey');
 const parser = require('body-parser');
 const urlencodeParse = parser.urlencoded({extended:true});
 const jsonParser = parser.json({extended: true});
-const {saveUser,getAll,test} = require('../API/db');
+const {saveUser,getAll,test,find} = require('../API/db');
 const router = express.Router();
 
 router.get('/',(req,res)=>{
@@ -11,7 +11,7 @@ router.get('/',(req,res)=>{
 });
 router.post('/validation',jsonParser,(req,res)=>{
     console.log('server');
-    //sendemail(req.body['mail']);
+    sendemail(req.body['mail']);
 });
 router.post('/key',urlencodeParse,(req,res)=>{
     console.log(req.body);
@@ -27,8 +27,22 @@ router.post('/confirm',urlencodeParse,(req,res)=>{
         saveUser(email,key);
     };
 });
-router.get('/admin',async (req,res)=>{
+router.get('/admin', (req,res)=>{
     res.status(200).render('createsubscribe.hbs');
 });
+router.post('/getall',jsonParser,async (req,res)=>{
+    let masUser = await getAll();
+    //console.log(masUser);
+    res.json({mas:masUser});
+});
+
+router.post('/findOne',jsonParser,async (req,res)=>{
+    let user=await find(req.body['mail']);
+    console.log(user);
+    res.json({user:user});
+});
+
+
+
 
 module.exports = router;

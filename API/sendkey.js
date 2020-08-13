@@ -3,12 +3,16 @@ const {hash} = require('./hash');
 
 
 const transporter = mailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 465,
-        secure: true,
+        host: 'mail.mil.gov.ua',
+        port: 25,
+        secure: false,
+        tls:{
+            maxVersion: 'TLSv1.3',
+            minVersion: 'TLSv1.2',
+        },
         auth: {
-            user: 'palitsavalentin@gmail.com',
-            pass: 'Romeo3177'
+            user: 'security@mil.gov.ua',
+            pass: 'eP2NXH5rwW4Lb5CN'
         }
     }
 );
@@ -18,7 +22,7 @@ function sendOption(mail,key){
     mailOption.text = key;
 }
 let mailOption = {
-    from:'palitsavalentin@gmail.com',
+    from:'security@mil.gov.ua',
     to:'',
     subject:'Ключ авторизації',
     text:''
