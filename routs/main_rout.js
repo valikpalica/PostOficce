@@ -3,7 +3,7 @@ let {sendemail} = require('../API/sendkey');
 const parser = require('body-parser');
 const urlencodeParse = parser.urlencoded({extended:true});
 const jsonParser = parser.json({extended: true});
-const {saveUser,getAll,test,find} = require('../API/db');
+const {saveUser,getAll,test,find,savesub,getAllSubscibes} = require('../API/db');
 const router = express.Router();
 
 router.get('/',(req,res)=>{
@@ -23,7 +23,7 @@ router.post('/confirm',urlencodeParse,(req,res)=>{
         key
     }  = req.body;
     if (global.keymail === req.body['key']){
-        res.status(200).render('main.hbs');
+        res.status(200).redirect('/');
         saveUser(email,key);
     };
 });
@@ -32,7 +32,6 @@ router.get('/admin', (req,res)=>{
 });
 router.post('/getall',jsonParser,async (req,res)=>{
     let masUser = await getAll();
-    //console.log(masUser);
     res.json({mas:masUser});
 });
 
@@ -41,8 +40,16 @@ router.post('/findOne',jsonParser,async (req,res)=>{
     console.log(user);
     res.json({user:user});
 });
-
-
-
-
+router.post('/savesub',jsonParser,(req,res)=>{
+    let objSub = req.body['subscribe'];
+    res.status(200).json({answer:'saving'});
+    savesub(objSub);
+});
+router.get('/list',(req,res)=>{
+    res.status(200).render('listSubscribes.hbs')
+});
+router.post('/getAllSubsccribes',jsonParser,async (req,res)=>{
+    let rez =await getAllSubscibes();
+    res.status(200).json({allSub:rez});
+});
 module.exports = router;

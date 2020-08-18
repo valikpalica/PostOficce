@@ -6,6 +6,7 @@ buttonSave.addEventListener('click', SaveAll);
 find.addEventListener('click', findUser);
 
 async function createTable() {
+    console.log('create table');
     let tbody = document.getElementById('tbody');
     let tableHTML = '';
     let response = await fetch('/getall', {
@@ -16,7 +17,7 @@ async function createTable() {
     });
     let resmas = await response.json();
     let mas = resmas.mas;
-
+    console.log(mas);
     mas.forEach(i => {
         tableHTML += '<tr>\n' +
             `                    <th scope="row"><input type="checkbox" id="check"  class="checkboxes" value=${i.email}></th>\n` +
@@ -28,6 +29,7 @@ async function createTable() {
 }
 
 async function findUser() {
+
     let user = document.getElementById('findUser').value;
     let response = await fetch('/findOne', {
         method: 'POST',
@@ -56,7 +58,7 @@ function getAllUser() {
     }
 }
 
-function SaveAll() {
+async function SaveAll() {
     let namesubscribe = document.getElementById('namesubscribe').value;
     let checkboxes = document.getElementsByClassName('checkboxes');
     let checkUsers = [];
@@ -67,8 +69,16 @@ function SaveAll() {
     }
     allnew();
     console.log({name: namesubscribe, users: checkUsers});
-    //post request to save in db
-    return {name: namesubscribe, users: checkUsers};
+    let response =await fetch('/savesub',{
+        method:'POST',
+        headers:{
+            'Content-Type':'application/json;charset=utf-8',
+        },
+        body:JSON.stringify({subscribe:{name: namesubscribe, users: checkUsers}}),
+    });
+    let res = await response.json();
+    console.log(res);
+    /*return {name: namesubscribe, users: checkUsers};*/
 }
 
 

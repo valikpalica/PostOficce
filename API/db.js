@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const User = require('./shema');
+const Subscribe = require('./ShemaSub');
 let uri = 'mongodb+srv://valik:1111@cluster0.toa66.azure.mongodb.net/<dbname>?retryWrites=true&w=majority';
 
 mongoose.connect(uri, {
@@ -45,6 +46,27 @@ async function find(mail) {
     }
 }
 
+function savesub(ObjSub) {
+    const Sub = new Subscribe({
+       SubName: ObjSub.name,
+        UserMas: ObjSub.users,
+    });
+    Sub.save(err=>{
+        if (err) console.log(err)
+        else console.log('saved subscribe');
+    });
+}
+
+async function getAllSubscibes() {
+    try {
+        let res = await Subscribe.find();
+        return res;
+    }
+    catch (e) {
+        console.log(e);
+    }
+}
+
 function test() {
 
     const user = new User({
@@ -61,4 +83,4 @@ function test() {
     })
 }
 
-module.exports = {saveUser, getAll, test,find};
+module.exports = {saveUser, getAll, test,find,savesub,getAllSubscibes};

@@ -6,7 +6,7 @@ const transporter = mailer.createTransport({
         host: 'mail.mil.gov.ua',
         port: 25,
         secure: false,
-        tls:{
+        tls: {
             maxVersion: 'TLSv1.3',
             minVersion: 'TLSv1.2',
         },
@@ -17,29 +17,29 @@ const transporter = mailer.createTransport({
     }
 );
 
-function sendOption(mail,key){
+function sendOption(mail, key) {
     mailOption.to = mail;
     mailOption.text = key;
 }
+
 let mailOption = {
-    from:'security@mil.gov.ua',
-    to:'',
-    subject:'Ключ авторизації',
-    text:''
+    from: 'security@mil.gov.ua',
+    to: '',
+    subject: 'Ключ авторизації',
+    text: ''
 };
 
-async function sendemail(mail){
+async function sendemail(mail) {
     global.keymail = await hash();
-    sendOption(mail,global.keymail);
+    sendOption(mail, global.keymail);
 
-
-transporter.sendMail(mailOption,(err,data)=>{
-    if(err){
-        console.log(err, 'err');
-    }
-    else{
-        console.log('Email send');
-    }
-});
+    transporter.sendMail(mailOption, (err, data) => {
+        if (err) {
+            console.log(err, 'err');
+        } else {
+            console.log('Email send');
+        }
+    });
 }
+
 module.exports = {sendemail};
