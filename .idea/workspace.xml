@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82023c7e-79a6-4b06-90dd-4e3dea8418e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/API/DBmethod/getAllRecipient.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/DBmethod/getAllStatus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/DBmethod/writeStatus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Nodemailer/sendEmails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/WorkWithStatus/treatmentResponse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/model/modelStatus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/front/sendEmails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/front/statusEmails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/information.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/sendEmails.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/updateSub.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/ShemaSub.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/model/ShemaSub.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/DBmethod/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/hash.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/getKey/hash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/sendkey.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/Nodemailer/sendkey.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/shema.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/model/shema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front/allSubscribes.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/allSubscribes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front/createSub.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/createSub.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routs/main_rout.js" beforeDir="false" afterPath="$PROJECT_DIR$/routs/main_rout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layouts/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/layout.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/listSubscribes.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/listSubscribes.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +106,7 @@
       <workItem from="1602889868556" duration="2176000" />
       <workItem from="1602958886614" duration="6782000" />
       <workItem from="1603087677802" duration="4014000" />
-      <workItem from="1604474526411" duration="520000" />
+      <workItem from="1604474526411" duration="1967000" />
     </task>
     <servers />
   </component>
