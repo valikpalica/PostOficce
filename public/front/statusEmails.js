@@ -13,9 +13,23 @@ async function getAllStatus() {
         body:JSON.stringify({nameSub:NameSub})
     });
     let result = await responseStatus.json();
-    result.answer?createTable(result.answer):alert('no Information');
+    result.answer?createTable(result.answer):sendNoInformation();
 }
 
+
+
+function sendNoInformation() {
+    let div = document.getElementById('NoInfo');
+    let table = document.getElementById('table');
+    table.style.display = 'none';
+    div.style.display  =  'block';
+    let blockNoInformation = `<label style="color: #FFFFFF; font-size: 40px">No information</label>`;
+    div.style.textAlign = 'center';
+    div.innerHTML = blockNoInformation;
+    div.style.height = '100px';
+    div.style.paddingBottom ='40px';
+
+}
 
 function createTable(obj) {
     document.getElementById('time').innerText  =obj.Date;
