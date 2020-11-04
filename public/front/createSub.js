@@ -20,10 +20,10 @@ async function createTable() {
     console.log(mas);
     mas.forEach(i => {
         tableHTML += '<tr>\n' +
-            `                    <th scope="row"><input type="checkbox" id="check"  class="checkboxes" value=${i.email}></th>\n` +
-            `                    <td>${i.email}</td>\n` +
-            `                    <td>${i.key}</td>\n` +
-            '                </tr>'
+        `                    <th scope="row"><input type="checkbox" id="check"  class="checkboxes" value=${i.email}></th>\n` +
+        `                    <td>${i.email}</td>\n` +
+        `                    <td>${i.key}</td>\n` +
+        '                </tr>'
     });
     tbody.innerHTML = tableHTML;
 }

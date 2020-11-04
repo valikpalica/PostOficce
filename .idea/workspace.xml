@@ -2,16 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82023c7e-79a6-4b06-90dd-4e3dea8418e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/API/ShemaSub.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/front/allSubscribes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/listSubscribes.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/DBmethod/getAllRecipient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/DBmethod/getAllStatus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/DBmethod/writeStatus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/Nodemailer/sendEmails.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/WorkWithStatus/treatmentResponse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/model/modelStatus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/front/sendEmails.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/front/statusEmails.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/information.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/sendEmails.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/updateSub.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/sendkey.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/sendkey.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/shema.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/shema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/ShemaSub.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/model/ShemaSub.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/DBmethod/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/hash.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/getKey/hash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/sendkey.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/Nodemailer/sendkey.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/shema.js" beforeDir="false" afterPath="$PROJECT_DIR$/API/model/shema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/allSubscribes.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/allSubscribes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/front/createSub.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/createSub.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routs/main_rout.js" beforeDir="false" afterPath="$PROJECT_DIR$/routs/main_rout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/list.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/layout.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/listSubscribes.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/listSubscribes.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +62,15 @@
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\valik\WebstormProjects\PostOffice\API\WorkWithStatus" />
+      <recent name="C:\Users\valik\WebstormProjects\PostOffice\API\model" />
+      <recent name="C:\Users\valik\WebstormProjects\PostOffice\API\Nodemailer" />
+      <recent name="C:\Users\valik\WebstormProjects\PostOffice\API\getKey" />
+      <recent name="C:\Users\valik\WebstormProjects\PostOffice\API\DBmethod" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -86,7 +109,27 @@
       <workItem from="1597253671371" duration="20516000" />
       <workItem from="1597511742478" duration="1044000" />
       <workItem from="1597738066557" duration="8414000" />
-      <workItem from="1597760213914" duration="1858000" />
+      <workItem from="1597760213914" duration="14324000" />
+      <workItem from="1597830012421" duration="3395000" />
+      <workItem from="1597989620215" duration="13269000" />
+      <workItem from="1598071778401" duration="3307000" />
+      <workItem from="1598258510454" duration="2495000" />
+      <workItem from="1598426526075" duration="1829000" />
+      <workItem from="1599052670241" duration="1500000" />
+      <workItem from="1599074099634" duration="302000" />
+      <workItem from="1599075929638" duration="1208000" />
+      <workItem from="1599080412222" duration="571000" />
+      <workItem from="1599113761509" duration="340000" />
+      <workItem from="1599716694774" duration="639000" />
+      <workItem from="1599727136315" duration="2051000" />
+      <workItem from="1600423745353" duration="204000" />
+      <workItem from="1602506570973" duration="18283000" />
+      <workItem from="1602674991710" duration="4538000" />
+      <workItem from="1602742884587" duration="14493000" />
+      <workItem from="1602889868556" duration="2176000" />
+      <workItem from="1602958886614" duration="6782000" />
+      <workItem from="1603087677802" duration="4014000" />
+      <workItem from="1604474526411" duration="520000" />
     </task>
     <servers />
   </component>
@@ -98,6 +141,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="536" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1597211854464" />
+    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1599055801599">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599055801599" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1602675885154">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1602675885154" />
     <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1597063693164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -139,11 +190,16 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="463" y="10" width="609" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1597139333888" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1597738351664">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1603021226493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1597738351664" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1602580770219" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603021226493" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603021573137">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1602575735797" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1597236413981" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1597002155455" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603021573137" />
   </component>
 </project>
