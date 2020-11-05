@@ -77,6 +77,16 @@ async function removeSub(name) {
     }
 }
 
+async function findSubscribe(name) {
+    try{
+        let res = await Subscribe.find({SubName:name});
+        return res;
+    }
+    catch (e) {
+        console.log(e);
+    }
+}
+
 function test() {
 
     const user = new User({
@@ -93,4 +103,4 @@ function test() {
     })
 }
 
-module.exports = {saveUser, getAll, test,find,savesub,getAllSubscibes,removeSub};
+module.exports = {saveUser, getAll, test,find,savesub,getAllSubscibes,removeSub,findSubscribe};

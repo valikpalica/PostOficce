@@ -18,7 +18,7 @@ let {sendemail} = require('../API/Nodemailer/sendkey');
 const parser = require('body-parser');
 const urlencodeParse = parser.urlencoded({extended: false});
 const jsonParser = parser.json({extended: true});
-const {saveUser, getAll, test, find, savesub, getAllSubscibes, removeSub} = require('../API/DBmethod/db');
+const {saveUser, getAll, test, find, savesub, getAllSubscibes, removeSub,findSubscribe} = require('../API/DBmethod/db');
 const router = express.Router();
 
 
@@ -125,6 +125,17 @@ router.post('/getAllStatus',jsonParser,async (req,res)=>{
     console.log(responseDB);
     res.status(200).json({answer:responseDB});
 });
+router.post('/findSubscribes',jsonParser,async (req,res)=>{
+    const {name} = req.body;
+    let result = await findSubscribe(name);
+    console.log(result);
+    if (result.length!=0){
+        res.status(200).json({answer:true});
+    }
+    else {
+        res.status(200).json({answer:false});
+    }
 
+});
 
 module.exports = router;

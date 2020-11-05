@@ -28,7 +28,6 @@ function sendNoInformation() {
     div.innerHTML = blockNoInformation;
     div.style.height = '100px';
     div.style.paddingBottom ='40px';
-
 }
 
 function createTable(obj) {
